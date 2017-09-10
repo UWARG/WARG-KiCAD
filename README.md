@@ -7,20 +7,9 @@ There are 2 steps to add a component. This process is to make it easy to find pa
 2) Update the WARG.lib file with the new kicad symbol and store the WARG part number in the "Datasheet" field.
 
 ### Installing into a new project
-To add the kiCad library to a new project, add it as a git submodule in your project folder. To do this, use ```git submodule add <url>``` command in the directory you want it added. Also be sure to pull the submodule repo using ```git submodule update --init --recursive```.
+To add the kiCad library to a new project, add it as a git submodule in your project folder. To do this, use "git submodule add <url>" command in the directory you want it added. Also be sure to pull the submodule repo using "git submodule update --init --recursive".
 
 Once the submmodule is added, point to your submodule folder using a relative path, and add the WARG.lib to your project libraries.
-
-
-### Generating BOM
-To generate a Bill of Materials (BOM), use the generate_warg_bom.py script.
-
-1. In KiCad Eeschema (schematic editor), go to Tools ->Generate Bill of Materials or click on the BOM icon in the toolbar.
-2. Click "Add Plugin" and navigate to the generate_warg_bom.py script. Click on it. The "Command Line" text field should be auto-completed with something like this:
- ```python "[Your local directory]\WARG\ZeroPilot-HW\WARG-kicad\bom\generate_warg_bom.py" "%I" "%O"  ```
-3. Make sure the correct plugin is selected and click "Generate". It will print out the file path of the BOM in csv format
-4. Love, cherish, and adore your new bill of materials.
-
 
 ### Component Library Prefixes:
 
