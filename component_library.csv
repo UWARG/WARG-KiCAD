@@ -63,3 +63,7 @@ CAPP-004,,587-1262-1-ND,CAP CER 1.0UF 16V Y5V 0603,,90,6/18/17,,,,,
 CAPP-005,,490-3285-1-ND,CAP CER .1UF 100V X7R 0603,,1,6/18/17,,,,,
 CAPP-004,,399-5090-1-ND,CAP CERAMIC 1.00UF 16V X5R 0603,,83,6/18/17,,,,,
 RESS-003,,311-100KGRCT-ND,RES SMD 100K OHM 5% 1/10W 0603,,100,6/18/17,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+REGU-003,Digi-Key,1589-1457-ND,Linear Regulator Replacement DC DC Converter 1 Output 3.3V 1.2A 4.5V - 24V Input,MEZD71201A-F,,,,4.66,,3-SIP,https://www.digikey.ca/product-detail/en/monolithic-power-systems-inc/MEZD71201A-F/1589-1457-ND/6823820
