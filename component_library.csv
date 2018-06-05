@@ -1,4 +1,4 @@
-part_num,Distrubuter,Distributer #,description,Manufacturer Part #,Inventory,Inventory Date,Alternative distributer #s
+part_num,Distributor,Distributor #,description,Manufacturer Part #,Inventory,Inventory Date,Alternative Distributor #s
 CAPP-001,Digi-Key,1276-1119-1-ND ,CAP CER 10UF 6.3V X5R 0603,,31,9/18/17,445-7492-1-ND / 490-3896-1-ND / 445-4112-1-ND
 CAPP-002,Digi-Key,1276-1104-1-ND,CAP CER 0.022UF 50V 10% X7R 0603,,100,9/18/17,
 CAPP-003,Digi-Key,1276-6504-1-ND,CAP CER 22UF 10V X5R 0603,,96,9/18/17,
