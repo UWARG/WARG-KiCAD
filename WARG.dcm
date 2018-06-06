@@ -6,4 +6,9 @@ K connector SD microsd
 F http://katalog.we-online.de/em/datasheet/693072010801.pdf
 $ENDCMP
 #
+$CMP USB_MICRO_B
+D USB mini/micro connector
+K connector USB micro b
+$ENDCMP
+#
 #End Doc Library
