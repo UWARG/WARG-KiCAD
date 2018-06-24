@@ -18,15 +18,3 @@ _autosave-*
 
 # Exported BOM files
 *.xml
-<<<<<<< HEAD
-=======
-*.csv
-*.html
-
-/Hardware/Production Files
-Hardware/.DS_Store
-Hardware/ZeroPilot-cache.lib
-Hardware/fp-lib-table
-Hardware/Gerber.zip
-Hardware/Gerber
->>>>>>> 691a0c99b4d2468f6a5ff89936c726278143d186
