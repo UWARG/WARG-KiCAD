@@ -33,14 +33,19 @@ def main():
     for part_element in tree.findall(".//comp"):
         part = dict()
         fields = part_element.find('fields')
+        
         if(fields == None):
-            print "Warning: No part number for part",part_element.attrib['ref']
-            continue
+          if("TP" not in part_element.attrib['ref']):
+            print "Warning: No part_num field for part",part_element.attrib['ref']
+          continue
         for child in fields.findall('field'):
             part.update({child.attrib['name']:child.text})
-
         ref = part_element.attrib['ref']
+
         
+        if "part_num" not in part.keys():
+            print "Error: No part_num field for part",part_element.attrib['ref']
+            sys.exit()
         #Find a matching part to add a quantity
         matching_part = {}
         for check in found_parts:
