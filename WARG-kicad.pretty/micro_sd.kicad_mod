@@ -1,4 +1,4 @@
-(module micro_sd (layer F.Cu) (tedit 5ABC160A)
+(module micro_sd (layer F.Cu) (tedit 5B325D80)
   (descr "MicroSD Card socket, Molex P/N 502774-0811")
   (fp_text reference microsd_socket (at 0 10.39876) (layer F.SilkS)
     (effects (font (thickness 0.3048)))
@@ -6,6 +6,7 @@
   (fp_text value J** (at 0 -9.70026) (layer F.SilkS)
     (effects (font (thickness 0.3048)))
   )
+  (fp_circle (center -3.6068 -5.9182) (end -3.45948 -5.85978) (layer F.SilkS) (width 0.3))
   (fp_line (start 2.90068 7.29996) (end 4.39928 7.59968) (layer F.SilkS) (width 0.381))
   (fp_line (start -2.19964 7.59968) (end -1.39954 7.39902) (layer F.SilkS) (width 0.381))
   (fp_line (start -1.39954 7.39902) (end 0.50038 7.2009) (layer F.SilkS) (width 0.381))
