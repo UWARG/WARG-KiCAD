@@ -16,7 +16,7 @@ def main():
     #output_dict is the dictionary that gets written to the csv file
     found_parts = []
     output_dict = []
-    keylist = ['ref', 'quantity']
+    keylist = ['ref', 'quantity', 'footprint']
     
     #Parse the netlist and store it in an lxml tree
     tree = ET.parse(netlist_xml)
@@ -41,10 +41,12 @@ def main():
         for child in fields.findall('field'):
             part.update({child.attrib['name']:child.text})
         ref = part_element.attrib['ref']
+        #print part_element.find('footprint').text
+        part.update({'footprint':part_element.find('footprint').text})
 
         
         if "part_num" not in part.keys():
-            print "Error: No part_num field for part",part_element.attrib['ref']
+            print "Error: No part_num field for part",ref
             sys.exit()
         #Find a matching part to add a quantity
         matching_part = {}
@@ -52,18 +54,18 @@ def main():
             #Check if they both have the same keys
             if check.keys() == part.keys():
                 #Check if all the values are the same
+                match_found = True
                 for key in check.keys():
                     if check[key] != part[key]:
-                        break
-                    matching_part = check
-
+                        match_found = False
+                if match_found: matching_part = check
         if matching_part == {}:
             found_parts.append(part.copy())
             part.update({'quantity':1, 'ref':ref})
             output_dict.append(part)
         else:
-            output_dict[found_parts.index(part)]['quantity'] += 1
-            output_dict[found_parts.index(part)]['ref'] += (', ' + ref)
+            output_dict[found_parts.index(matching_part)]['quantity'] += 1
+            output_dict[found_parts.index(matching_part)]['ref'] += (', ' + ref)
     reader = csv.DictReader(open(component_lib_filename, 'rb'))
 
     #Add the component library keys to the keylist
