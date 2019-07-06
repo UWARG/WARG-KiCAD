@@ -1,5 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP AON7804
+D Dual NMOS transistor, 6 pin package
+K transistor NMOS N-MOS N-MOSFET
+F http://www.aosmd.com/res/data_sheets/AON7804.pdf
+$ENDCMP
+#
+$CMP DMC3032LSD
+F https://www.diodes.com/assets/Datasheets/ds32153.pdf
+$ENDCMP
+#
 $CMP Micro_SD_Card
 D Micro SD Card Socket
 K connector SD microsd
