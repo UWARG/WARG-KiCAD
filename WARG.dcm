@@ -20,6 +20,12 @@ $CMP STM32F091RCT7
 F https://www.st.com/resource/en/datasheet/DM00115237.pdf
 $ENDCMP
 #
+$CMP SW_Push_Dual_1-2short_3-4short
+D Push button switch, generic, symbol, four pins
+K switch normally-open pushbutton push-button
+F ~
+$ENDCMP
+#
 $CMP USB_MICRO_B
 D USB mini/micro connector
 K connector USB micro b
